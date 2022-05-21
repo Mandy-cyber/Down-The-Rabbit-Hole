@@ -6,6 +6,11 @@ html {
     background-repeat: no-repeat;
 }
 
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 /* TODO make the cursor a picture of a carrot */
 /* .custom {
     cursor: url(images/my-cursor.png), auto;

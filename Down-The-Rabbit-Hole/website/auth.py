@@ -19,7 +19,7 @@ def login():
             if check_password_hash(user.password, password):
                 flash("You're in!", category='success') #TODO ask Belle to draw our own flashes instead of having to use basic Flask ones
                 login_user(user, remember=True) 
-                return redirect(url_for('views.landing'))
+                return redirect(url_for('views.welcome_user'))
             else:
                 flash('Oopsie, wrong username or password, try again.', category='error')
         else:
@@ -62,8 +62,8 @@ def sign_up():
                 db.session.add(new_user)
                 db.session.commit()
                 flash('Account created successfully! Welcome to the rabbit hold <3', category='success')
-                login_user(user, remember=True)
-                return redirect(url_for('views.landing'))
+                login_user(new_user, remember=True)
+                return redirect(url_for('views.welcome_user'))
     return render_template("signup.html", user=current_user)
 
 #----------------------------------------------------------------------------------------------------------------------------#
