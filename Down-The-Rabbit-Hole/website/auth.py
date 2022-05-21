@@ -9,7 +9,7 @@ auth = Blueprint('auth', __name__)
 #----------------------------------------------------------------------------------------------------------------------------#
 #LOGIN STUFF
 
-@auth.route('/login', methods=['GET', 'POST'])
+@auth.route('/sign-in', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST': 
         username = request.form.get('username')
@@ -24,7 +24,7 @@ def login():
                 flash('Oopsie, wrong username or password, try again.', category='error')
         else:
             flash('Oopsie, wrong username or password, try again.', category='error')
-    return render_template("login.html", user=current_user)
+    return render_template("sign_in.html", user=current_user)
 
 #----------------------------------------------------------------------------------------------------------------------------#
 #LOGOUT STUFF

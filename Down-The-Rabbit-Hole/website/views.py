@@ -1,5 +1,3 @@
-from crypt import methods
-from unicodedata import category
 from . import db
 from .models import User, Snippet
 from flask import Blueprint, jsonify, render_template, flash, request
@@ -13,6 +11,10 @@ views = Blueprint('views', __name__)
 @views.route('/')
 def first_landing():
     return render_template("landing.html")
+
+@views.route('/enter')
+def user_auth():
+    return render_template("log_or_sign.html")
 
 @views.route('/welcome')
 @login_required
