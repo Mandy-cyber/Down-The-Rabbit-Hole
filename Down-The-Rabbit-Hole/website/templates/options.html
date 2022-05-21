@@ -3,13 +3,18 @@
 
 {% block content %}
 
-<body background="{{ url_for('static', filename='ladder2.png') }}" usemap="#workmap">
+<body style="background-color: black; height: 100%;">
 
+    <img src="{{ url_for('static', filename='ladder3.png') }}" usemap="#workmap" alt="" height="100%">
+
+    <!-- TODO research different accessibility settings that can be added to an html website -->
+
+    <!-- we found the specific coordinates of our image using https://www.image-map.net/ -->
   <map name="workmap">
-    <area shape="rect" coords="34,44,270,350" alt="History" href="history.html">
-    <area shape="rect" coords="290,172,333,250" alt="Art" href="art.html">
-    <area shape="circle" coords="337,300,44" alt="Music" href="music.html">
-    <area shape="circle" coords="337,300,44" alt="Tech" href="tech.html">
+    <area alt="History theme" title="History" href="/history" coords="974,45,1136,187" shape="rect">
+    <area alt="Art theme" title="Art" href="/art" coords="879,266,1003,385" shape="rect">
+    <area alt="Music theme" title="Music" href="/music" coords="774,472,915,610" shape="rect">
+    <area alt="Tech theme" title="Tech" href="/tech" coords="670,661,777,768" shape="rect">
   </map>
 
 </body>

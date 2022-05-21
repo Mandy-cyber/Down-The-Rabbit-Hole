@@ -5,6 +5,11 @@ html {
     overflow: hidden;
 }
 
+/* TODO make the cursor a picture of a carrot */
+/* .custom {
+    cursor: url(images/my-cursor.png), auto;
+} */
+
 /* -------------------------------------------------------------------------- */
 /* FOR MESSAGE.HTML */
 
