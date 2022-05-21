@@ -69,7 +69,7 @@ html {
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    border-bottom-style: groove;
+    border-bottom-style:initial;
     background-color: transparent;
     font-size: 2vw;
     font-family: 'Shadows Into Light Two', cursive;
@@ -98,7 +98,39 @@ html {
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    border-bottom-style: hidden;
+    border-bottom-style: initial;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* FOR SIGNUP.HTML */
+
+.sp-input {
+    width: 450px;
+    height: 50px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:initial;
+    background-color: transparent;
+    font-size: 2vw;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bold;
+    letter-spacing: 1vw;
+}
+
+#sp-button {
+    width: 140px;
+    height: 62px;
+    position: fixed;
+    top: 91%;
+    left: 46%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: initial;
     background-color: transparent;
     cursor: pointer;
 }
