@@ -6,6 +6,10 @@ views = Blueprint('views', __name__)
 def landing():
     return render_template("landing.html")
 
+@views.route('/message')
+def see_message():
+    return render_template("message.html")
+
 @views.route('/options', methods=['GET', 'POST'])
 def theme_options():
     return render_template("options.html")

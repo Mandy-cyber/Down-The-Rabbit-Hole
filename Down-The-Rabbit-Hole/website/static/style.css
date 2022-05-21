@@ -1,6 +1,55 @@
-h1 {
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 10vw;
-    padding-left: 2vw;
-    padding-top: 2vw;
+/* -------------------------------------------------------------------------- */
+/* FOR ALL PAGES */
+
+html {
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/* FOR MESSAGE.HTML */
+
+#message {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: lighter;
+    letter-spacing: 1vw; 
+    font-size: 600%;
+    padding-top: 50vw;
+    position: relative;
+    width: 30em;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    color: white;  
+    text-align: center;
+}
+
+.type{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+  
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 14em;}
+}
+
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+
+/* -------------------------------------------------------------------------- */
+/* FOR LANDING.HTML */
+
+#downy {
+    width: 55%; 
+    height: auto;
+    padding-left: 23vw;
+    padding-top: 20vw;
+}
+
+#landing_body {
+    background-size: 1440px 800px; 
+    background-repeat: no-repeat;
 }

@@ -3,11 +3,10 @@
 
 {% block content %}
 
-<body 
-style="background-size: 1440px 800px; background-repeat: no-repeat;" 
-background="{{ url_for('static', filename='Untitled_Artwork 3.jpg') }}"> 
+<body id="landing_body" background="{{ url_for('static', filename='landing_bg.jpg') }}"> 
 
-<a href="options.html"><img src="{{ url_for('static', filename='downy.gif') }}" alt=""></a>
+<!-- TODO mention in documentation that we use accesibility functions like 'alt' -->
+<a href="/message"><img id="downy" src="{{ url_for('static', filename='downy2.gif') }}" class="center" alt=" 'Down The Rabbit Hole' animated pixel-art text that shifts down and disappears on a loop."></a>
 
 </body>
 
