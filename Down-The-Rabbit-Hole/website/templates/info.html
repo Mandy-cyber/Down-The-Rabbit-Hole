@@ -7,26 +7,27 @@
 <body id="info-body"></body>
 
     {% for info in all_information %}
-    <div class="card" style="width:700px; left: 40%; margin-top: 2vw; overflow: visible;">
+    <div class="card" style="width:700px; left: 40%; margin-top: 2vw; overflow: scroll;">
         <div class="container">
             <p class="info-text" style="text-align: center;"> {{ info }}</p>
         </div>
         <p class="source-of-info"></p>
+        <form method="POST">
+            <div class="form" align="left" width="5vw">
+                <input 
+                    type="text" 
+                    class="snip_text" 
+                    id="snip_text" 
+                    name="snip_text" 
+                />
+            </div>
+            <button id="snip-button" type="submit">Snip It</button>
+        </form>
     </div>
     <br>
     {% endfor %}
 
-<form method="POST">
-    <div class="form" align="left" width="5vw">
-        <input 
-            type="text" 
-            class="snip_text" 
-            id="snip_text" 
-            name="snip_text" 
-        />
-    </div>
-    <button id="snip-button" type="submit">Snip It</button>
-</form>
+
 
 <a href="/my-snippets" style="font-family: 'Shadows Into Light Two', cursive;">Go to My Snippets Page</a>
 

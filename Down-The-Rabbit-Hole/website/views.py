@@ -134,7 +134,7 @@ def tech():
 @views.route('/info', methods=['GET', 'POST'])
 @login_required
 def snip_and_sip(): #lolol sorry but this is too funny
-    subthemes = ['feminist literature', 'queer love letters', 'top horror novels turned to movies','top 10 fanfictions','most tear-jerking poems']
+    subthemes = ['feminist literature'] #'top horror novels turned to movies','top 10 fanfictions','most tear-jerking poems'
     def do_everything(subthemes):
         all_information = []
         for subtheme in subthemes:
