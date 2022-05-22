@@ -12,7 +12,7 @@ import random
 #             'top horror novels turned to movies',
 #             'top 10 fanfictions',
 #             'most tear-jerking poems']
-subtheme = 'top 10 fanfictions'
+subtheme = 'top 10 fanfiction'
 
 def set_up_page(subtheme):
     # get_driver = GetChromeDriver() 
@@ -27,23 +27,61 @@ def set_up_page(subtheme):
     searchbar.send_keys(subtheme)
     searchbar.send_keys(Keys.RETURN)
     url = browser.current_url
+    word = "search="
+    if word in url:
+        newUrls = find_pages(url)
+    else:
+        page = requests.get(url)
+        ramen = BeautifulSoup(page.content, 'html.parser')
+        paras = ramen.find_all("p", class_="")[0:5]
+        paragraphs = []
+        for para in paras:
+            print(para.text)
+            paragraphs.append(para.text)
+        # return paragraphs
     return url
 
-def find_info(url):
+
+def find_pages(url):
     page = requests.get(url)
     ramen = BeautifulSoup(page.content, 'html.parser')
     names = ramen.find_all("li", class_="mw-search-result") #, class_="mw-search-result-heading"
     newUrls = []
-    for name in names[:3]:
+    for name in names[:2]:
         name = name.find("a")['href']
         new_url = f"https://www.wikipedia.com/{name}"
         newUrls.append(new_url)
     return newUrls
 
-url = set_up_page(subtheme)
-newUrls = find_info(url)
+def find_multiple_info(newUrls):
+    paragraphs = []
+    for url in newUrls:
+        page = requests.get(url)
+        ramen = BeautifulSoup(page.content, 'html.parser')
+        paras = ramen.find_all("p", class_="")[0:5]
+        for para in paras:
+            print(para.text)
+            paragraphs.append(para.text)
+    return paragraphs
 
-print(newUrls)
+url = set_up_page(subtheme)
+newUrls = find_pages(url)
+
+
+
+# def find_info(url):
+#     page = requests.get(url)
+#     ramen = BeautifulSoup(page.content, 'html.parser')
+#     paras = ramen.find_all("p", class_="")[0:5]
+#     paragraphs = []
+#     for para in paras:
+#         print(para.text)
+#         paragraphs.append(para.text)
+#     return paragraphs
+        
+
+
+# print(newUrls)
 
 
 
