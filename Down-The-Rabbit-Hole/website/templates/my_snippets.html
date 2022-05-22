@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+<!-- TODO make the nameOfPage with if/else depending on which page the user clicks-->
+{% block title %} {{ nameOfPage }} {% endblock %} 
+
+{% block content %}
+
+<h1 align="center">My Snippets</h1>
+<ul class="snippet-collection">
+    {% for snippet in snippets %}
+        <li class="individual-snippet">
+            {{ snippet.snipText }}
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

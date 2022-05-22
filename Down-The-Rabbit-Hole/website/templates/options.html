@@ -5,11 +5,11 @@
 
 <body style="background-color: black; height: 100%;" background="{{ url_for('static', filename='options.jpg') }}">
 
-  <img id="music" class="options_img" src="{{ url_for('static', filename='music-small.png') }}" alt="">
-  <img id="art" class="options_img" src="{{ url_for('static', filename='art-small.png') }}" alt="">
-  <img id="tech" class="options_img" src="{{ url_for('static', filename='tech-small.png') }}" alt="">
-  <img id="lit" class="options_img" src="{{ url_for('static', filename='lit-small.png') }}" alt="">
-
+  <!-- TODO crop images -->
+  <a href="/music"><img id="music" class="options_img" src="{{ url_for('static', filename='music-small.png') }}" alt=""></a>
+  <a href="/art"><img id="art" class="options_img" src="{{ url_for('static', filename='art-small.png') }}" alt=""></a>
+  <a href="/tech"><img id="tech" class="options_img" src="{{ url_for('static', filename='tech-small.png') }}" alt=""></a>
+  <a href="/lit"><img id="lit" class="options_img" src="{{ url_for('static', filename='lit-small.png') }}" alt=""></a>
 
 </body>
 

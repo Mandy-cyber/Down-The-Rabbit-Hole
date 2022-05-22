@@ -4,9 +4,28 @@
 
 {% block content %}
 
-<div class="container">
-    <h1></h1>
-    <p> {{}} </p>
-</div>
+<body id="info-body"></body>
+
+{% for text in texts %}
+    <div class="card" style="width:700px; left: 40%; margin-top: 2vw;">
+        <div class="container">
+            <p class="info-text" style="text-align: center;">{{ text }}</p>
+        </div>
+        <p class="source-of-info"></p>
+    </div>
+    <br>
+{% endfor %}
+
+<form method="POST">
+    <div class="form" align="left">
+        <input 
+            type="text" 
+            class="snip_text" 
+            id="snip_text" 
+            name="snip_text" 
+        />
+    </div>
+    <button id="snip-button" type="submit">Snip It</button>
+</form>
 
 {% endblock %}

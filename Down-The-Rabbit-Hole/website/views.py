@@ -57,11 +57,13 @@ def tech():
 #----------------------------------------------------------------------------#
 #PAGE FOR SEEING SEARCH FINDINGS + MAKING SNIPPETS
 
+texts = ["dummy text 1", "dummy text 2"]
+
 @views.route('/info', methods=['GET', 'POST'])
 @login_required
 def snip_and_sip(): #lolol sorry but this is too funny
     if request.method == 'POST':
-        snipText = request.form.get('snip')
+        snipText = request.form.get('snip_text')
         if len(snipText) < 5:
             flash('This snippet is too small!', category='error')
         else:
@@ -69,10 +71,13 @@ def snip_and_sip(): #lolol sorry but this is too funny
             db.session.add(newSnippet)
             db.session.commit()
             return render_template("info.html", user=current_user)
-    return render_template("info.html", user=current_user)
+    else:
+        texts = ['dummy text 1', 'dummy text 2']
+    return render_template("info.html", user=current_user, texts=texts)
 
 #----------------------------------------------------------------------------#
 
 @views.route('/my-snippets') #no POST because POST is done from the pages above
 def show_snippets():
-    return render_template("my_snippets.html", user=current_user)
+    snippets = Snippet.query.all()
+    return render_template("my_snippets.html", user=current_user, snippets=snippets)
