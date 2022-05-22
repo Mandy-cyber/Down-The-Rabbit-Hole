@@ -84,7 +84,6 @@ def do_everything(subthemes):
             all_information.append(information)
     return all_information
 
-all_information = do_everything(subthemes)
 
 
 views = Blueprint('views', __name__)
@@ -126,7 +125,7 @@ def literature():
         # all_information = do_everything(subthemes)
         # print(all_information)
         print(Info.query.all())
-    return render_template("literature.html", all_information)
+    return render_template("literature.html")
 
 @views.route('/art', methods=['GET', 'POST'])
 @login_required
@@ -151,7 +150,7 @@ def tech():
 
 @views.route('/info', methods=['GET', 'POST'])
 @login_required
-def snip_and_sip(all_information): #lolol sorry but this is too funny
+def snip_and_sip(): #lolol sorry but this is too funny
     if request.method == 'POST':
         snipText = request.form.get('snip_text')
         if len(snipText) < 5:
@@ -166,8 +165,8 @@ def snip_and_sip(all_information): #lolol sorry but this is too funny
         print("")
         # all_info = Info.query.all()
         # print(all_info)
-        return render_template("info.html", user=current_user, all_info=all_info)
-    return render_template("info.html", user=current_user, all_info=all_information)
+        return render_template("info.html", user=current_user)
+    return render_template("info.html", user=current_user)
 
 #----------------------------------------------------------------------------#
 
