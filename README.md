@@ -20,7 +20,7 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 ### Python
  - This project uses the [Flask web development framework](https://flask.palletsprojects.com/en/2.1.x/) .
  Flask is a web framework written in Python used to create web applications.
- - We created the user authentication system used in our project, as well as the under-lying databases used for this system. You can learn more about this in the Security section.
+ - We created the user authentication system used in our project, as well as the under-lying databases used for this system. You can learn more about this in  [Security](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/README.md#security).
  - This project uses [selenium](https://selenium-python.readthedocs.io/), a tool that aided us in web scraping via the use and control of web browsers.
  - This project uses [Beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), a python library used to extract data from html files.
  - Error and success messages
