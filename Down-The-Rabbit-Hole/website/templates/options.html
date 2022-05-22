@@ -5,20 +5,12 @@
 
 <body style="background-color: black; height: 100%;" background="{{ url_for('static', filename='options.jpg') }}">
 
-    <!-- <img src="{{ url_for('static', filename='ladder3.png') }}" usemap="#workmap" alt="" height="100%"> -->
+  <img id="music" class="options_img" src="{{ url_for('static', filename='music-small.png') }}" alt="">
+  <img id="art" class="options_img" src="{{ url_for('static', filename='art-small.png') }}" alt="">
+  <img id="tech" class="options_img" src="{{ url_for('static', filename='tech-small.png') }}" alt="">
+  <img id="lit" class="options_img" src="{{ url_for('static', filename='lit-small.png') }}" alt="">
 
-    <div>
-        <!-- TODO make this div a box at the side of the ladder that tells ppl to hover over an option -->
-    </div>
 
-    <!-- we found the specific coordinates of our image using https://www.image-map.net/ -->
-  <!-- <map name="workmap">
-    <area alt="History theme" title="History" href="/literature" coords="974,45,1136,187" shape="rect">
-    <area alt="Art theme" title="Art" href="/art" coords="879,266,1003,385" shape="rect">
-    <area alt="Music theme" title="Music" href="/music" coords="774,472,915,610" shape="rect">
-    <area alt="Tech theme" title="Tech" href="/tech" coords="670,661,777,768" shape="rect">
-  </map> -->
-
-</body> -->
+</body>
 
 {% endblock %}

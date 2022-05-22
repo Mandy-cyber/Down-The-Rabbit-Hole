@@ -18,8 +18,8 @@ def set_up_page(subtheme):
     # get_driver = GetChromeDriver() 
     # get_driver.install()
     options = Options()
-    # options.add_argument("--headless")
-    # options.add_argument("--log-level=3")
+    options.add_argument("--headless")
+    options.add_argument("--log-level=3")
     # options.add_experimental_option("detach", True)
     browser = webdriver.Chrome(options=options)
     browser.get("https://www.wikipedia.com")
@@ -33,12 +33,17 @@ def find_info(url):
     page = requests.get(url)
     ramen = BeautifulSoup(page.content, 'html.parser')
     names = ramen.find_all("li", class_="mw-search-result") #, class_="mw-search-result-heading"
-    for name in names:
-        print(name)
-    # print(ramen.prettify())
+    newUrls = []
+    for name in names[:3]:
+        name = name.find("a")['href']
+        new_url = f"https://www.wikipedia.com/{name}"
+        newUrls.append(new_url)
+    return newUrls
 
 url = set_up_page(subtheme)
-find_info(url)
+newUrls = find_info(url)
+
+print(newUrls)
 
 
 

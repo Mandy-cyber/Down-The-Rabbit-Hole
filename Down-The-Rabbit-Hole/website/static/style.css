@@ -145,3 +145,12 @@ body {
     min-width: 100%;
     min-height: 100%;
   }
+
+
+/* -------------------------------------------------------------------------- */
+/* FOR OPTIONS.HTML */
+
+.options_img{
+    position: fixed;
+    padding-right: 50px;
+}
