@@ -46,9 +46,10 @@ def sign_up():
         password = request.form.get('password1')
         confirm_password = request.form.get('password2')
         #DOING SOME VALIDATION CHECKS
-        user = User.query.filter_by(username=username).first()
-        if user:
-            flash('Hmm, it seems like this username is already taken!', category='error')
+        user = User.query.filter_by(email=email).first()
+        user2 = User.query.filter_by(username=username).first()
+        if user or user2:
+            flash('Hmm, it seems like this username or email is already taken!', category='error')
         else:
             if len(email) < 4:
                 flash('Invalid email address', category='error')
