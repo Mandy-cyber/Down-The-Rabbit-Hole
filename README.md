@@ -1,5 +1,5 @@
 # Down-The-Rabbit-Hole
-![Down-The-Rabbit-Hole Logo](DowntheRabbitholelogosmaller.jpg)
+![Down-The-Rabbit-Hole Logo](DowntheRabbitholelogo.jpg)
 
 ## Introduction
 ## Project Philosphy
