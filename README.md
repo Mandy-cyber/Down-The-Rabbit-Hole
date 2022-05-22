@@ -31,5 +31,6 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 - Amanda Rodriques @Mandy-cyber
 - Annabelle Chung @annabellechung
 - Sarah Cole @juzsarah
+
 ## 🙏 Acknowledgements
 Special Thanks to GryphHacks for this amazing opportunity to create Down the Rabbit Hole. We hope to make a positive impact on users, and judges 💛
