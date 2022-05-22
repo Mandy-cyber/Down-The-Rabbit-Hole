@@ -1,9 +1,8 @@
 # Down-The-Rabbit-Hole
 
-<p align="center">
-    
-![Down-The-Rabbit-Hole Logo](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/downtherabbitholelogogif.gif)
-</p>
+![DowntheRabbitholegif](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/downtherabbitholelogogif.gif) <align=center>
+   
+
 
 ## ✍️ Introduction
 Our project, Down the Rabbit Hole, seeks to take advantage of the addictiveness of scrolling on the internet to encourage youth to learn more. Down the Rabbit Hole addresses a more recent real-world issue: __Internet Addiction__. Internet Addiction affects users worldwide and can become problematic. For example, with the ease of access to information, one may be at risk of finding and circulating biased information. Similarly, youth are often at risk of interacting with non-educational, hyper-stimulating content for long periods. 
