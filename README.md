@@ -25,7 +25,6 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 - Animations
 - Cursor Settings
 - Text Styling and Formatting
-### Javascript 
 ## 👏 Contributors
 **All original art work created by Annabelle Chung**
 ### Website by:
