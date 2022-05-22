@@ -28,7 +28,7 @@ With Down the Rabbit Hole, users may become informed about general topics like H
  <img align="right" src=https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/screnshotofcode.jpg >
  
  
- You can learn more about this in  [Security](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/README.md#security).
+ You can learn more about this when you see [the Security subheading](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/README.md#security).
  - This project uses [selenium](https://selenium-python.readthedocs.io/), a tool that aided us in web scraping via the use and control of web browsers.
  - This project uses [Beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), a python library used to extract data from html files.
  - Error and success messages
@@ -47,6 +47,12 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 Our project uses a user authentication system that allows users to sign up for Down the Rabbit Hole. When signed in, users may save their favourite article segments for access at a later time. 
 Users credentials are stored in a database using a private key. User passwords are automatically hashed upon entry in the login form to maintain user security.
 ### Accessibility 
+
+- In our project's website we used semantic HTML. Semantic HTML is HTML code which describes what it does. This means our HTML code will be easier to read and understand for anyone who wants to view the underlying code. 
+- Additionally, our HTML code uses alt tags for each image displayed for better accessibility, in the case the images do not load.
+- Our HTML is structured in an order which may be easily read by a screen-reader, making it easy to understand for someone who is visually impaired. For example, we made use of "h1" "h2" etc. tags, ensuring our headers are in descending order, as well as div tags with specific names (ARIA Roles)
+  
+
 ## 👍 Our experience
 From the beginning, we were all extremely excited to participate in this hackathon. The possibilities, brewed by iced coffee and late-night video calls, were endless. Down the Rabbit hole was born on the first day, and we instantly began working on it. We struggled with HTML formatting, image dimensions (a word that makes us shudder) and more as we continued. Similarly, we realized that two days isn't nearly as much time as we thought. 
 We were worried about our project meeting the judges' criteria. Our typical thoughts of "real-world issues" ranged from solving world hunger and ending poverty, and we chose an untraditional route. However, our purpose is personal to each of us. We all have experienced the addictiveness of the internet and see how it can affect our peers, family and friends. Thus we classify it as a more modern real-world issue, as we see its effects all around us. 
@@ -68,6 +74,6 @@ Linkedins:
 We were very purposeful in choosing the type of license our project would have - the MIT license. This license allows users to create, modify, and distribute works using our code, for either commercial or private usage. Essentially, making our code open source. The importance of open source code is greatly underestimated (not sure this is the right word lolol), and we strive to not only promote it, but bring more awareness to it. Open source inspires creativity - sounds a lot like C.O.D.E right!
 
 ## 🙏 Acknowledgements
-Special Thanks to GryphHacks for this amazing opportunity to create Down the Rabbit Hole. Another special thanks to the sponsors: [Socis](https://socis.ca/), [MLH](https://mlh.io/), >GCC, [Voiceflow](https://www.voiceflow.com/), [Digital Ocean](https://www.digitalocean.com/), [FDM](https://fdm-www-app-fdm-www-app-stage.azurewebsites.net/en-ca/ca-home/), [Google Cloud](https://cloud.google.com/), [Twilio](https://www.twilio.com/), [echo 3D](https://www.echo3d.co/), [Deso](https://www.deso.org/), [Roomiez](https://www.roomiez.ca/), [Mathworks](https://www.mathworks.com/), [Poke Guys](https://www.pokeguys.ca/), [Circleci](https://circleci.com/), [Cockroach Labs](https://www.cockroachlabs.com/product/) and [Domain.com](https://www.domain.com/).
+Special Thanks to GryphHacks for this amazing opportunity to create Down the Rabbit Hole. Another special thanks to the sponsors, whom you may find by clicking on thei rrespective links: [Socis](https://socis.ca/), [MLH](https://mlh.io/), >GCC, [Voiceflow](https://www.voiceflow.com/), [Digital Ocean](https://www.digitalocean.com/), [FDM](https://fdm-www-app-fdm-www-app-stage.azurewebsites.net/en-ca/ca-home/), [Google Cloud](https://cloud.google.com/), [Twilio](https://www.twilio.com/), [echo 3D](https://www.echo3d.co/), [Deso](https://www.deso.org/), [Roomiez](https://www.roomiez.ca/), [Mathworks](https://www.mathworks.com/), [Poke Guys](https://www.pokeguys.ca/), [Circleci](https://circleci.com/), [Cockroach Labs](https://www.cockroachlabs.com/product/) and [Domain.com](https://www.domain.com/).
 
 We hope to make a positive impact on users, and judges 💛
