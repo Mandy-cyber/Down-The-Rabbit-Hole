@@ -1,5 +1,5 @@
 # Down-The-Rabbit-Hole
-![Down-The-Rabbit-Hole Logo](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/DowntheRabbitholelogo.jpg)
+![Down-The-Rabbit-Hole Logo](DowntheRabbitholelogosmaller.jpg)
 
 ## Introduction
 ## Project Philosphy
