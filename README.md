@@ -1,16 +1,17 @@
 # Down-The-Rabbit-Hole
-
 <p align="center">
-    
-![Down-The-Rabbit-Hole Logo](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/downtherabbitholelogogif.gif)
+
+<img src=https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/downtherabbitholelogogif.gif alt="Down the Rabbit Hole logo gif" >
+  
 </p>
+
 
 ## ✍️ Introduction
 Our project, Down the Rabbit Hole, seeks to take advantage of the addictiveness of scrolling on the internet to encourage youth to learn more. Down the Rabbit Hole addresses a more recent real-world issue: __Internet Addiction__. Internet Addiction affects users worldwide and can become problematic. For example, with the ease of access to information, one may be at risk of finding and circulating biased information. Similarly, youth are often at risk of interacting with non-educational, hyper-stimulating content for long periods. 
 ### How it Works
 With Down the Rabbit Hole, users may become informed about general topics like History, Literature, Technology and more through web scraping. Our project scrapes the web for articles and web pages related to subtopics of these general topics. A segment of the article, which may have an interesting fact or background information about the subtopic, is displayed for the user. A highlighted word or phrase in this segment will link to a separate article. The user may continue ‘down the rabbit hole’ of information and proceed to the article or end the rabbit hole. Providing the user with this choice allows them to be mindful of the time spent in this rabbit hole and ensures that they may access only content which may interest them
 ## 👩‍🏫 Project Philosphy
-> The development of this project is for use in the GryphHacks Hackathon 2022. As an all-women coding team, we chose to reevaluate what it means to code. One may assume coding involves long, tedious and challenging tasks, however, our team demonstrates that coding may be casual, original, dynamic and exciting (C.O.D.E).
+> The development of this project is for use in the GryphHacks Hackathon 2022. As an all-women coding team, we chose to reevaluate what it means to code. One may assume coding involves long, tedious and challenging tasks, however, our team demonstrates that coding may be creative, original, dynamic and exciting (C.O.D.E).
 ## 👩‍💻 Features, Skills and Techniques
 ### Animation and Graphic Design
  - All designs were created using [Procreate software](https://procreate.art/).
@@ -30,14 +31,17 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 - Cursor Settings
 - Text Styling and Formatting
 ## 👏 Contributors
-**All original art work created by Annabelle Chung**
+**All original art work created by [Annabelle Chung](https://github.com/annabellechung)**
 ### Website by:
-- Sarah Cole @juzsarah
-- Amanda Rodriques @Mandy-cyber
-- Annabelle Chung @annabellechung
+- Sarah Cole [@juzsarah](https://github.com/juzsarah)
+- Amanda Rodriques [@Mandy-cyber](https://github.com/Mandy-cyber)
+- Annabelle Chung [@annabellechung](https://github.com/annabellechung)
 
 
 ![Down-The-Rabbit-Hole-Team](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/collaborators.jpeg)
+## 🔐License
+
+We were very purposeful in choosing the type of license our project would have - the MIT license. This license allows users to create, modify, and distribute works using our code, for either commercial or private usage. Essentially, making our code open source. The importance of open source code is greatly underestimated (not sure this is the right word lolol), and we strive to not only promote it, but bring more awareness to it. Open source inspires creativity - sounds a lot like C.O.D.E right!
 
 ## 🙏 Acknowledgements
 Special Thanks to GryphHacks for this amazing opportunity to create Down the Rabbit Hole. We hope to make a positive impact on users, and judges 💛
