@@ -2,6 +2,8 @@ from get_chrome_driver import GetChromeDriver
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from bs4 import BeautifulSoup
+import requests
 import time
 import random
 
@@ -12,28 +14,37 @@ import random
 #             'most tear-jerking poems']
 subtheme = 'top 10 fanfictions'
 
-def set_up():
+def set_up_page(subtheme):
     get_driver = GetChromeDriver() 
     get_driver.install()
     options = Options()
-    options.add_argument("--headless")
+    # options.add_argument("--headless")
     options.add_argument("--log-level=3")
     browser = webdriver.Chrome(options=options)
-    return browser
-
-def scrape_wiki(subtheme, browser):
     browser.get("https://www.wikipedia.com")
     searchbar = browser.find_element_by_name("search")
     searchbar.send_keys(subtheme)
     searchbar.send_keys(Keys.RETURN)
+    return browser
+
+# # get URL
+# page = requests.get("https://en.wikipedia.org/wiki/Main_Page")
+ 
+# # scrape webpage
+# soup = BeautifulSoup(page.content, 'html.parser')
+ 
+# # display scrapped data
+# print(soup.prettify())
+
+
+
+browser = set_up_page(subtheme)
 
 # def scrape_citi(subtheme):
 #     print("")
 
 # def scrape_brit(subtheme):
 #     print("")
-
-
 
 # def make_selection(subtheme):
 #     websites = ['britannica', 'citizendium', 'wikipedia']
