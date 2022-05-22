@@ -63,4 +63,5 @@ We were very purposeful in choosing the type of license our project would have -
 
 ## 🙏 Acknowledgements
 Special Thanks to GryphHacks for this amazing opportunity to create Down the Rabbit Hole. Another special thanks to the sponsors: [Socis](https://socis.ca/), [MLH](https://mlh.io/), >GCC, [Voiceflow](https://www.voiceflow.com/), [Digital Ocean](https://www.digitalocean.com/), [FDM](https://fdm-www-app-fdm-www-app-stage.azurewebsites.net/en-ca/ca-home/), [Google Cloud](https://cloud.google.com/), [Twilio](https://www.twilio.com/), [echo 3D](https://www.echo3d.co/), [Deso](https://www.deso.org/), [Roomiez](https://www.roomiez.ca/), [Mathworks](https://www.mathworks.com/), [Poke Guys](https://www.pokeguys.ca/), [Circleci](https://circleci.com/), [Cockroach Labs](https://www.cockroachlabs.com/product/) and [Domain.com](https://www.domain.com/).
+
 We hope to make a positive impact on users, and judges 💛
