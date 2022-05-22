@@ -6,6 +6,7 @@ Our project, Down the Rabbit Hole, seeks to take advantage of the addictiveness 
 ### How it Works
 With Down the Rabbit Hole, users may become informed about general topics like History, Literature, Technology and more through web scraping. Our project scrapes the web for articles and web pages related to subtopics of these general topics. A segment of the article, which may have an interesting fact or background information about the subtopic, is displayed for the user. A highlighted word or phrase in this segment will link to a separate article. The user may continue ‘down the rabbit hole’ of information and proceed to the article or end the rabbit hole. Providing the user with this choice allows them to be mindful of the time spent in this rabbit hole and ensures that they may access only content which may interest them
 ## 👩‍🏫 Project Philosphy
+> The development of this project is for use in the GryphHacks Hackathon 2022. As an all-women coding team, we chose to reevaluate what it means to code. One may assume coding involves long, tedious and challenging tasks, however, our team demonstrates that coding may be casual, original, dynamic and exciting (C.O.D.E).
 ## 👩‍💻 Features, Skills and Techniques
 ### Animation and Graphic Design
  - All designs were created using [Procreate software](https://procreate.art/).
