@@ -1,7 +1,9 @@
 # Down-The-Rabbit-Hole
+<p align="center">
 
-![DowntheRabbitholegif](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/downtherabbitholelogogif.gif) <align=center>
-   
+<img src=https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/downtherabbitholelogogif.gif alt="Down the Rabbit Hole logo gif" >
+  
+</p>
 
 
 ## ✍️ Introduction
