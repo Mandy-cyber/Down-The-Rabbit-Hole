@@ -18,27 +18,25 @@ def set_up_page(subtheme):
     get_driver = GetChromeDriver() 
     get_driver.install()
     options = Options()
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
     options.add_argument("--log-level=3")
     browser = webdriver.Chrome(options=options)
     browser.get("https://www.wikipedia.com")
     searchbar = browser.find_element_by_name("search")
     searchbar.send_keys(subtheme)
     searchbar.send_keys(Keys.RETURN)
-    return browser
+    url = browser.current_url
+    return url
 
-# # get URL
-# page = requests.get("https://en.wikipedia.org/wiki/Main_Page")
- 
-# # scrape webpage
-# soup = BeautifulSoup(page.content, 'html.parser')
- 
-# # display scrapped data
-# print(soup.prettify())
+def find_info(url):
+    page = requests.get(url)
+    ramen = BeautifulSoup(page.content, 'html.parser')
+    print(ramen.prettify())
 
+url = set_up_page(subtheme)
+find_info(url)
 
-
-browser = set_up_page(subtheme)
+    
 
 # def scrape_citi(subtheme):
 #     print("")
