@@ -171,4 +171,20 @@ body {
 .container {
     padding: 2px 16px;
 }
+
+/* -------------------------------------------------------------------------- */
+/* FOR MY_SNIPPETS.HTML */
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+#info-body {
+    overflow: auto;
+}
+  
+.container2 {
+    padding: 2px 16px;
+}
     

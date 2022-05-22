@@ -5,12 +5,16 @@
 {% block content %}
 
 <h1 align="center">My Snippets</h1>
-<ul class="snippet-collection">
-    {% for snippet in snippets %}
-        <li class="individual-snippet">
-            {{ snippet.snipText }}
-        </li>
-    {% endfor %}
-</ul>
+
+{% for snippet in snippets %}
+    <div class="card2" style="width:700px; margin-top: 2vw;">
+        <div class="container2">
+            <p class="info-text" style="text-align: center;">{{ snippet.snipText }}</p>
+        </div>
+        <p class="source-of-info"></p>
+    </div>
+    <br>
+{% endfor %}
+
 
 {% endblock %}
