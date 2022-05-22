@@ -39,6 +39,9 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 
 
 ![Down-The-Rabbit-Hole-Team](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/collaborators.jpeg)
+## 🔐License
+
+We were very purposeful in choosing the type of license our project would have - the MIT license. This license allows users to create, modify, and distribute works using our code, for either commercial or private usage. Essentially, making our code open source. The importance of open source code is greatly underestimated (not sure this is the right word lolol), and we strive to not only promote it, but bring more awareness to it. Open source inspires creativity - sounds a lot like C.O.D.E right!
 
 ## 🙏 Acknowledgements
 Special Thanks to GryphHacks for this amazing opportunity to create Down the Rabbit Hole. We hope to make a positive impact on users, and judges 💛
