@@ -28,9 +28,12 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 ## 👏 Contributors
 **All original art work created by Annabelle Chung**
 ### Website by:
+- Sarah Cole @juzsarah
 - Amanda Rodriques @Mandy-cyber
 - Annabelle Chung @annabellechung
-- Sarah Cole @juzsarah
+
+
+![Down-The-Rabbit-Hole-Team](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/collaborators.jpeg)
 
 ## 🙏 Acknowledgements
 Special Thanks to GryphHacks for this amazing opportunity to create Down the Rabbit Hole. We hope to make a positive impact on users, and judges 💛
