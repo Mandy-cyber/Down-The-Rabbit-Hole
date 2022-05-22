@@ -23,6 +23,8 @@ With Down the Rabbit Hole, users may become informed about general topics like H
  - Python was also used for web scraping.
  - This project uses [selenium](https://selenium-python.readthedocs.io/), a tool that aided us in web scraping via the use and control of web browsers.
  - This project uses [Beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), a python library used to extract data from html files.
+ - Error and success messages
+ - Navigation
  
 ### Html
 - Image mapping for multiple pages on the websites
@@ -33,6 +35,7 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 - Animations
 - Cursor Settings
 - Text Styling and Formatting
+## 👍 Our experience
 ## 👏 Contributors
 **All original art work created by [Annabelle Chung](https://github.com/annabellechung)**
 ### Website by:
