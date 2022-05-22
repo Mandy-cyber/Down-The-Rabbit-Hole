@@ -2,7 +2,6 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
-from rpack import *
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
@@ -15,7 +14,7 @@ def create_app():
 
     from .views import views
     from .auth import auth
-    from .models import User, Snippet
+    from .models import User, Snippet, Info
 
     create_database(app)
 

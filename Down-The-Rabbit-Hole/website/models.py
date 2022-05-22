@@ -16,7 +16,9 @@ class Snippet(db.Model):
     date = db.Column(db.DateTime(timezone=True), default=func.now())
     user_name = db.Column(db.String(30), db.ForeignKey('user.username'))
 
-# class Music(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     music_info = db.Column(db.String)
-#     source_of_info = db.Column(db.String)
+class Info(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    infoText = db.Column(db.String)
+    info_category = db.Column(db.String)
+
+    
