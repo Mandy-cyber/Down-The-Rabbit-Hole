@@ -7,12 +7,11 @@ import requests
 import time
 import random
 
-# subthemes = ['feminist literature', 
-#             'queer love letters', 
-#             'top horror novels turned to movies',
-#             'top 10 fanfictions',
-#             'most tear-jerking poems']
-subtheme = 'top 10 fanfiction'
+subthemes = ['feminist literature', 
+            'queer love letters', 
+            'top horror novels turned to movies',
+            'top 10 fanfictions',
+            'most tear-jerking poems']
 
 def set_up_page(subtheme):
     # get_driver = GetChromeDriver() 
@@ -38,11 +37,10 @@ def find_info(url):
     page = requests.get(url)
     ramen = BeautifulSoup(page.content, 'html.parser')
     paras = ramen.find_all("p", class_="")[0:5]
-    paragraphs = []
+    information = []
     for para in paras:
-        print(para.text)
-        paragraphs.append(para.text)
-    return paragraphs
+        information.append(para.text)
+    return information
 
 
 def find_pages(url):
@@ -57,51 +55,34 @@ def find_pages(url):
     return newUrls
 
 def find_multiple_info(newUrls):
-    paragraphs = []
+    paragraphs = {}
     for url in newUrls:
         page = requests.get(url)
+        site_paragraphs = []
         ramen = BeautifulSoup(page.content, 'html.parser')
         paras = ramen.find_all("p", class_="")[0:5]
         for para in paras:
-            print(para.text)
-            paragraphs.append(para.text)
+            site_paragraphs.append(para.text)
+        paragraphs[url] = site_paragraphs
     return paragraphs
 
-returned_value = set_up_page(subtheme)
-if isinstance(returned_value, list):
-    newUrls = returned_value
-    print(newUrls)
-    # paragraphs = find_multiple_info(newUrls)
-else:
-    url = returned_value
-    paragraphs = find_info(url)
+
+# def all_subthemes_information(subthemes):
     
+#         return all_information
 
+all_information = []
+for subtheme in subthemes:
+    returned_value = set_up_page(subtheme)
+    if isinstance(returned_value, list):
+        newUrls = returned_value
+        paragraphs = find_multiple_info(newUrls)
+        all_information.append(paragraphs)
+    else:
+        url = returned_value
+        information = find_info(url)
+        all_information.append(information)
 
-# print(newUrls)
-# find_multiple_info(newUrls)
-# newUrls = find_pages(url)
+# all_information = all_subthemes_information(subthemes)
+print(all_information)
 
-
-
-
-        
-
-
-# print(newUrls)
-
-
-
-
-'''
-THE PLAN
----------------------
-- function takes user input as variable
-- input = a word, phrase or really anything that can be searched
-- function randomly selects site from preapproved list to scrape
-- get first two paragraphs or maybe 200 words?
-- run it through a loop so every x amount of words, it inserts a new line
-- randomly choose a word from the new paragraph 
-- return both the new word and the 2 paragraphs
-
-'''
