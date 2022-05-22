@@ -26,7 +26,7 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 - Text Styling and Formatting
 ### Javascript 
 ## 👏 Contributors
-**All original art work by Annabelle Chung**
+**All original art work created by Annabelle Chung**
 ### Website by:
 - Amanda Rodriques @Mandy-cyber
 - Annabelle Chung @annabellechung
