@@ -30,16 +30,19 @@ def set_up_page(subtheme):
     word = "search="
     if word in url:
         newUrls = find_pages(url)
+        return newUrls
     else:
-        page = requests.get(url)
-        ramen = BeautifulSoup(page.content, 'html.parser')
-        paras = ramen.find_all("p", class_="")[0:5]
-        paragraphs = []
-        for para in paras:
-            print(para.text)
-            paragraphs.append(para.text)
-        # return paragraphs
-    return url
+        return url
+
+def find_info(url):
+    page = requests.get(url)
+    ramen = BeautifulSoup(page.content, 'html.parser')
+    paras = ramen.find_all("p", class_="")[0:5]
+    paragraphs = []
+    for para in paras:
+        print(para.text)
+        paragraphs.append(para.text)
+    return paragraphs
 
 
 def find_pages(url):
@@ -64,20 +67,24 @@ def find_multiple_info(newUrls):
             paragraphs.append(para.text)
     return paragraphs
 
-url = set_up_page(subtheme)
-newUrls = find_pages(url)
+returned_value = set_up_page(subtheme)
+if isinstance(returned_value, list):
+    newUrls = returned_value
+    print(newUrls)
+    # paragraphs = find_multiple_info(newUrls)
+else:
+    url = returned_value
+    paragraphs = find_info(url)
+    
+
+
+# print(newUrls)
+# find_multiple_info(newUrls)
+# newUrls = find_pages(url)
 
 
 
-# def find_info(url):
-#     page = requests.get(url)
-#     ramen = BeautifulSoup(page.content, 'html.parser')
-#     paras = ramen.find_all("p", class_="")[0:5]
-#     paragraphs = []
-#     for para in paras:
-#         print(para.text)
-#         paragraphs.append(para.text)
-#     return paragraphs
+
         
 
 
