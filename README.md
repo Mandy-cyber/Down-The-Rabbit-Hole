@@ -48,6 +48,8 @@ Our project uses a user authentication system that allows users to sign up for D
 Users credentials are stored in a database using a private key. User passwords are automatically hashed upon entry in the login form to maintain user security.
 ### Accessibility 
 ## 👍 Our experience
+From the beginning, we were all extremely excited to participate in this hackathon. The possibilities, brewed by iced coffee and late-night video calls, were endless. Down the Rabbit hole was born on the first day, and we instantly began working on it. We struggled with HTML formatting, image dimensions (a word that makes us shudder) and more as we continued. Similarly, we realized that two days isn't nearly as much time as we thought. 
+We were worried about our project meeting the judges' criteria. Our typical thoughts of "real-world issues" ranged from solving world hunger and ending poverty, and we chose an untraditional route. However, our purpose is personal to each of us. We all have experienced the addictiveness of the internet and see how it can affect our peers, family and friends. Thus we classify it as a more modern real-world issue, as we see its effects all around us. 
 ## 👏 Contributors
 **All original art work created by [Annabelle Chung](https://github.com/annabellechung)**
 ### Website by:
