@@ -8,9 +8,11 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 ## 👩‍🏫 Project Philosphy
 ## 👩‍💻 Features, Skills and Techniques
 ### Animation and Graphic Design
- - All designs were created using [Procreate software] (https://procreate.art/). Procreate is an IOS and iPadOS application for digital illustration and graphic editing. 
+ - All designs were created using [Procreate software](https://procreate.art/).
+ Procreate is an IOS and iPadOS application for digital illustration and graphic editing. 
 ### Python
- - This project uses the [Flask web development framework] (https://flask.palletsprojects.com/en/2.1.x/#api-reference). Flask is a web framework written in Python used to create web applications.
+ - This project uses the [Flask web development framework](https://flask.palletsprojects.com/en/2.1.x/) .
+ Flask is a web framework written in Python used to create web applications.
  - We created the user authentication system used in our project, as well as the under-lying databases used for this system. 
  - Python was also used for web scraping.
 ### Html
