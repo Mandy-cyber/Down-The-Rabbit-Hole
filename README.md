@@ -30,8 +30,6 @@ With Down the Rabbit Hole, users may become informed about general topics like H
  - Error and success messages
  - Navigation
  
-
- 
 ### Html
 - Image mapping for multiple pages on the websites
 - Formatting images and videos
@@ -42,8 +40,9 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 - Cursor Settings
 - Text Styling and Formatting
 ### Security 
+Our project uses a user authentication system that allows users to sign up for Down the Rabbit Hole. When signed in, users may save their favourite article segments for access at a later time. 
+Users credentials are stored in a database using a private key. User passwords are automatically hashed upon entry in the login form to maintain user security.
 ### Accessibility 
-
 ## 👍 Our experience
 ## 👏 Contributors
 **All original art work created by [Annabelle Chung](https://github.com/annabellechung)**
@@ -63,4 +62,6 @@ Linkedins:
 We were very purposeful in choosing the type of license our project would have - the MIT license. This license allows users to create, modify, and distribute works using our code, for either commercial or private usage. Essentially, making our code open source. The importance of open source code is greatly underestimated (not sure this is the right word lolol), and we strive to not only promote it, but bring more awareness to it. Open source inspires creativity - sounds a lot like C.O.D.E right!
 
 ## 🙏 Acknowledgements
-Special Thanks to GryphHacks for this amazing opportunity to create Down the Rabbit Hole. We hope to make a positive impact on users, and judges 💛
+Special Thanks to GryphHacks for this amazing opportunity to create Down the Rabbit Hole. Another special thanks to the sponsors: [Socis](https://socis.ca/), [MLH](https://mlh.io/), >GCC, [Voiceflow](https://www.voiceflow.com/), [Digital Ocean](https://www.digitalocean.com/), [FDM](https://fdm-www-app-fdm-www-app-stage.azurewebsites.net/en-ca/ca-home/), [Google Cloud](https://cloud.google.com/), [Twilio](https://www.twilio.com/), [echo 3D](https://www.echo3d.co/), [Deso](https://www.deso.org/), [Roomiez](https://www.roomiez.ca/), [Mathworks](https://www.mathworks.com/), [Poke Guys](https://www.pokeguys.ca/), [Circleci](https://circleci.com/), [Cockroach Labs](https://www.cockroachlabs.com/product/) and [Domain.com](https://www.domain.com/).
+
+We hope to make a positive impact on users, and judges 💛
