@@ -15,12 +15,15 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 ## 👩‍💻 Features, Skills and Techniques
 ### Animation and Graphic Design
  - All designs were created using [Procreate software](https://procreate.art/).
- Procreate is an IOS and iPadOS application for digital illustration and graphic editing. 
+ Procreate is an IOS and iPadOS application for digital illustration and graphic editing. The aesthetic of our project was inspired by Disney's Alice in Wonderland. However, to respect their intellectual property, we created our own designs and animations which would parody that of the iconic movie. These designs include the logo, the font size used and the general aesthetic of the project.
 ### Python
  - This project uses the [Flask web development framework](https://flask.palletsprojects.com/en/2.1.x/) .
  Flask is a web framework written in Python used to create web applications.
  - We created the user authentication system used in our project, as well as the under-lying databases used for this system. 
  - Python was also used for web scraping.
+ - This project uses [selenium](https://selenium-python.readthedocs.io/), a tool that aided us in web scraping via the use and control of web browsers.
+ - This project uses [Beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), a python library used to extract data from html files.
+ 
 ### Html
 - Image mapping for multiple pages on the websites
 - Formatting images and videos
@@ -37,6 +40,10 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 - Amanda Rodriques [@Mandy-cyber](https://github.com/Mandy-cyber)
 - Annabelle Chung [@annabellechung](https://github.com/annabellechung)
 
+Linkedins:
+[Sarah Cole](https://www.linkedin.com/in/sarah-cole-8317b01b6/)
+[Amanda Rodriques](https://www.linkedin.com/in/amanda-rodriques-725613217/)
+[Annabelle Chung](https://www.linkedin.com/in/annabelle-chung-57a040204/)
 
 ![Down-The-Rabbit-Hole-Team](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/collaborators.jpeg)
 ## 🔐License
