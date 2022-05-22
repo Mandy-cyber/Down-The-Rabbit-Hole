@@ -1,17 +1,9 @@
-from get_chrome_driver import GetChromeDriver
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import requests
-import time
-import random
 
-subthemes = ['feminist literature', 
-            'queer love letters', 
-            'top horror novels turned to movies',
-            'top 10 fanfictions',
-            'most tear-jerking poems']
 
 def set_up_page(subtheme):
     # get_driver = GetChromeDriver() 
@@ -66,23 +58,18 @@ def find_multiple_info(newUrls):
         paragraphs[url] = site_paragraphs
     return paragraphs
 
+# all_information = []
+# for subtheme in subthemes:
+#     returned_value = set_up_page(subtheme)
+#     if isinstance(returned_value, list):
+#         newUrls = returned_value
+#         paragraphs = find_multiple_info(newUrls)
+#         all_information.append(paragraphs)
+#     else:
+#         url = returned_value
+#         information = find_info(url)
+#         all_information.append(information)
 
-# def all_subthemes_information(subthemes):
-    
-#         return all_information
 
-all_information = []
-for subtheme in subthemes:
-    returned_value = set_up_page(subtheme)
-    if isinstance(returned_value, list):
-        newUrls = returned_value
-        paragraphs = find_multiple_info(newUrls)
-        all_information.append(paragraphs)
-    else:
-        url = returned_value
-        information = find_info(url)
-        all_information.append(information)
-
-# all_information = all_subthemes_information(subthemes)
-print(all_information)
+# print(all_information)
 

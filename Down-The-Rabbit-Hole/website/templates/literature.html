@@ -1,15 +1,18 @@
 {% extends "base.html" %}
+
+{% block head %}
+<!-- after 5 seconds it refreshes the page and moves to the options.html page -->
+<meta http-equiv="refresh" content="6;url=/options" />
+{% endblock %}
+
 {% block title %} Literature {% endblock %}
 
 {% block content %}
 
-<body background-color="">
-    
-</body>
-
 <body style="background-color:black;">
 
-    <h1 id="message" class="type">Generating Literature Information...</h1>
-  
-  </body>
+  <h1 id="message" class="type">Generating literature information...</h1>
+
+</body>
+
 {% endblock %}

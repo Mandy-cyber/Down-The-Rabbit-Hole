@@ -2,6 +2,7 @@ from . import db
 from .models import User, Snippet
 from flask import Blueprint, jsonify, render_template, flash, request
 from flask_login import login_user, login_required, logout_user, current_user
+from rpack import *
 
 views = Blueprint('views', __name__)
 
@@ -36,8 +37,20 @@ def theme_options():
 
 @views.route('/literature', methods=['GET', 'POST'])
 @login_required
-def history():
-    return render_template("literature.html")
+def literature():
+    subthemes = ['feminist literature', 'queer love letters', 'top horror novels turned to movies','top 10 fanfictions','most tear-jerking poems']
+    all_information = []
+    for subtheme in subthemes:
+        returned_value = set_up_page(subtheme)
+        if isinstance(returned_value, list):
+            newUrls = returned_value
+            paragraphs = find_multiple_info(newUrls)
+            all_information.append(paragraphs)
+        else:
+            url = returned_value
+            information = find_info(url)
+            all_information.append(information)
+    return render_template("literature.html", all_information=all_information)
 
 @views.route('/art', methods=['GET', 'POST'])
 @login_required
@@ -47,6 +60,7 @@ def art():
 @views.route('/music', methods=['GET', 'POST'])
 @login_required
 def music():
+    
     return render_template("music.html")
 
 @views.route('/tech', methods=['GET', 'POST'])
