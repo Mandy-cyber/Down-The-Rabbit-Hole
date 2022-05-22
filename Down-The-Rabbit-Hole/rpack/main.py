@@ -15,11 +15,12 @@ import random
 subtheme = 'top 10 fanfictions'
 
 def set_up_page(subtheme):
-    get_driver = GetChromeDriver() 
-    get_driver.install()
+    # get_driver = GetChromeDriver() 
+    # get_driver.install()
     options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--log-level=3")
+    # options.add_argument("--headless")
+    # options.add_argument("--log-level=3")
+    # options.add_experimental_option("detach", True)
     browser = webdriver.Chrome(options=options)
     browser.get("https://www.wikipedia.com")
     searchbar = browser.find_element_by_name("search")
@@ -31,29 +32,14 @@ def set_up_page(subtheme):
 def find_info(url):
     page = requests.get(url)
     ramen = BeautifulSoup(page.content, 'html.parser')
-    print(ramen.prettify())
+    names = ramen.find_all("li", class_="mw-search-result") #, class_="mw-search-result-heading"
+    for name in names:
+        print(name)
+    # print(ramen.prettify())
 
 url = set_up_page(subtheme)
 find_info(url)
 
-    
-
-# def scrape_citi(subtheme):
-#     print("")
-
-# def scrape_brit(subtheme):
-#     print("")
-
-# def make_selection(subtheme):
-#     websites = ['britannica', 'citizendium', 'wikipedia']
-#     website = random.choice(websites)
-#     if website == 'britannica':
-#         scrape_brit(subtheme)
-#     elif website == 'citizendium':
-#         scrape_citi(subtheme)
-#     else:
-#         scrape_wiki(subtheme)
-#     return
 
 
 
