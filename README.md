@@ -13,6 +13,10 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 
 ## 👩‍🏫 Project Philosphy
 > The development of this project is for use in the GryphHacks Hackathon 2022. As an all-women coding team, we chose to reevaluate what it means to code. One may assume coding involves long, tedious and challenging tasks, however, our team demonstrates that coding may be creative, original, dynamic and exciting (C.O.D.E).
+
+<img align="center" src=https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/C%20O%20D%20E.png alt="C.O.D.E CANVA">
+
+
 ## 👩‍💻 Features, Skills and Techniques
 ### Animation and Graphic Design
  - All designs were created using [Procreate software](https://procreate.art/).
