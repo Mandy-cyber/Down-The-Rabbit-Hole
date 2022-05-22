@@ -41,9 +41,9 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 - Annabelle Chung [@annabellechung](https://github.com/annabellechung)
 
 Linkedins:
-[Sarah Cole](https://www.linkedin.com/in/sarah-cole-8317b01b6/)
-[Amanda Rodriques](https://www.linkedin.com/in/amanda-rodriques-725613217/)
-[Annabelle Chung](https://www.linkedin.com/in/annabelle-chung-57a040204/)
+- [Sarah Cole](https://www.linkedin.com/in/sarah-cole-8317b01b6/)
+- [Amanda Rodriques](https://www.linkedin.com/in/amanda-rodriques-725613217/)
+- [Annabelle Chung](https://www.linkedin.com/in/annabelle-chung-57a040204/)
 
 ![Down-The-Rabbit-Hole-Team](https://github.com/Mandy-cyber/Down-The-Rabbit-Hole/blob/main/collaborators.jpeg)
 ## 🔐License
