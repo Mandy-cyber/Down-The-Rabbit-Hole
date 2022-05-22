@@ -69,23 +69,6 @@ def find_multiple_info(newUrls):
     return paragraphs
 
 
-def do_everything(subthemes):
-    all_information = []
-    for subtheme in subthemes:
-        returned_value = set_up_page(subtheme)
-        if isinstance(returned_value, list):
-            newUrls = returned_value
-            paragraphs = find_multiple_info(newUrls)
-            all_information.append(paragraphs)
-
-        else:
-            url = returned_value
-            information = find_info(url)
-            all_information.append(information)
-    return all_information
-
-
-
 views = Blueprint('views', __name__)
 
 #----------------------------------------------------------------------------#
@@ -151,6 +134,24 @@ def tech():
 @views.route('/info', methods=['GET', 'POST'])
 @login_required
 def snip_and_sip(): #lolol sorry but this is too funny
+    subthemes = ['feminist literature', 'queer love letters', 'top horror novels turned to movies','top 10 fanfictions','most tear-jerking poems']
+    def do_everything(subthemes):
+        all_information = []
+        for subtheme in subthemes:
+            returned_value = set_up_page(subtheme)
+            if isinstance(returned_value, list):
+                newUrls = returned_value
+                paragraphs = find_multiple_info(newUrls)
+                all_information.append(paragraphs)
+
+            else:
+                url = returned_value
+                information = find_info(url)
+                all_information.append(information)
+        return all_information
+
+    all_information = do_everything(subthemes)
+    print(all_information)
     if request.method == 'POST':
         snipText = request.form.get('snip_text')
         if len(snipText) < 5:
@@ -165,7 +166,7 @@ def snip_and_sip(): #lolol sorry but this is too funny
         print("")
         # all_info = Info.query.all()
         # print(all_info)
-        return render_template("info.html", user=current_user)
+        return render_template("info.html", user=current_user, all_information=all_information)
     return render_template("info.html", user=current_user)
 
 #----------------------------------------------------------------------------#

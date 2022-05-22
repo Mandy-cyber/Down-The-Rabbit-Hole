@@ -6,18 +6,18 @@
 
 <body id="info-body"></body>
 
-    <div class="card" style="width:700px; left: 40%; margin-top: 2vw;">
+    {% for info in all_information %}
+    <div class="card" style="width:700px; left: 40%; margin-top: 2vw; overflow: visible;">
         <div class="container">
-            <p class="info-text" style="text-align: center;">{{ all_information }} The feminist movement produced feminist fiction, feminist non-fiction, and feminist poetry, which created new interest in women's writing. It also prompted a general reevaluation of women's historical and academic contributions in response to the belief that women's lives and contributions have been underrepresented as areas of scholarly interest.[1] There has also been a close link between feminist literature and activism, with feminist writing typically voicing key concerns or ideas of feminism in a particular era.
-
-                Much of the early feminist literary scholarship was given over to the rediscovery and reclamation of texts written by women. In Western feminist literary scholarship, Studies like Dale Spender's Mothers of the Novel (1986) and Jane Spencer's The Rise of the Woman Novelist (1986) were ground-breaking in their insistence that women have always been writing.</p>
+            <p class="info-text" style="text-align: center;"> {{ info }}</p>
         </div>
         <p class="source-of-info"></p>
     </div>
     <br>
+    {% endfor %}
 
 <form method="POST">
-    <div class="form" align="left">
+    <div class="form" align="left" width="5vw">
         <input 
             type="text" 
             class="snip_text" 
@@ -28,6 +28,6 @@
     <button id="snip-button" type="submit">Snip It</button>
 </form>
 
-<a href="/my-snippets">Go to My Snippets Page</a>
+<a href="/my-snippets" style="font-family: 'Shadows Into Light Two', cursive;">Go to My Snippets Page</a>
 
 {% endblock %}
