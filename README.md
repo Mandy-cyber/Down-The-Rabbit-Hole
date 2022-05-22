@@ -47,9 +47,10 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 Our project uses a user authentication system that allows users to sign up for Down the Rabbit Hole. When signed in, users may save their favourite article segments for access at a later time. 
 Users credentials are stored in a database using a private key. User passwords are automatically hashed upon entry in the login form to maintain user security.
 ### Accessibility 
+
 - In our project's website we used semantic HTML. Semantic HTML is HTML code which describes what it does. This means our HTML code will be easier to read and understand for anyone who wants to view the underlying code. 
 - Additionally, our HTML code uses alt tags for each image displayed for better accessibility, in the case the images do not load.
-- Our HTML is structured in an order which may be easily read by a screen-reader, making it easy to understand for someone who is visually impaired. For example, we made use of <h1> <h2> etc. tags, ensuring our headers are in descending order, as well as div tags with specific names (ARIA Roles)
+- Our HTML is structured in an order which may be easily read by a screen-reader, making it easy to understand for someone who is visually impaired. For example, we made use of "h1" "h2" etc. tags, ensuring our headers are in descending order, as well as div tags with specific names (ARIA Roles)
   
 
 ## 👍 Our experience
