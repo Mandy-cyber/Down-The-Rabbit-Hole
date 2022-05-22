@@ -30,8 +30,6 @@ With Down the Rabbit Hole, users may become informed about general topics like H
  - Error and success messages
  - Navigation
  
-
- 
 ### Html
 - Image mapping for multiple pages on the websites
 - Formatting images and videos
@@ -42,8 +40,9 @@ With Down the Rabbit Hole, users may become informed about general topics like H
 - Cursor Settings
 - Text Styling and Formatting
 ### Security 
+Our project uses a user authentication system that allows users to sign up for Down the Rabbit Hole. When signed in, users may save their favourite article segments for access at a later time. 
+Users credentials are stored in a database using a private key. User passwords are automatically hashed upon entry in the login form to maintain user security.
 ### Accessibility 
-
 ## 👍 Our experience
 ## 👏 Contributors
 **All original art work created by [Annabelle Chung](https://github.com/annabellechung)**
