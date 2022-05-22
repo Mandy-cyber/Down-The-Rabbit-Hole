@@ -34,10 +34,10 @@ def theme_options():
 #----------------------------------------------------------------------------#
 #THESE PAGES SHOULD ALL HAVE SIMILAR FUNCTIONALITIES
 
-@views.route('/history', methods=['GET', 'POST'])
+@views.route('/literature', methods=['GET', 'POST'])
 @login_required
 def history():
-    return render_template("history.html")
+    return render_template("literature.html")
 
 @views.route('/art', methods=['GET', 'POST'])
 @login_required
